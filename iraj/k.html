@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profil – Goat</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+        .outer-box {
+            width: 80%;
+            max-width: 850px;
+            height: 80vh;
+            background: #1e1e1e;
+            border: 3px solid #d51cff;
+            border-radius: 15px;
+            padding: 30px;
+            overflow-y: auto; 
+			
+            box-shadow: 0 0 25px rgba(213,28,255,0.4);
+			
+        }
+		.outer-box::-webkit-scrollbar {
+   		 display: none;
+		}
+		
+
+        .container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+    		flex-wrap: wrap; 
+        }
+
+        .card {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 20px;
+			min-width: 500px;
+			max-width: 100%;
+        }
+		.card:hover{
+			box-shadow: 0 0 20px rgba(0,0,0,0.6);
+			
+
+		}
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            color: white;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #555;
+        }
+
+        td:first-child {
+            color: #d51cff;
+            font-weight: bold;
+        }
+
+        .image-box img {
+            width: 250px;
+            border-radius: 12px;
+			border: 3px solid #77158d;
+        }
+        .image-box img:hover {
+		transform: rotateY(10deg);
+        }
+
+         
+        .extra {
+            margin-top: 40px;
+            color: #000000;
+			text-align: center;
+            background-color: #ffffff;
+            border-radius: 15px;
+			border: 3px solid #77158d;
+            font-weight: bold;
+            box-shadow: 0 0 25px rgba(213,28,255,0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="outer-box">
+
+    <div class="container">
+        <div class="card">
+            <table>
+                <tr><td>Name</td><td>Goat</td></tr>
+                <tr><td>Alter</td><td>17</td></tr>
+                <tr><td>Geburtstag</td><td>Moin moin</td></tr>
+                <tr><td>Sprachen</td><td>alle</td></tr>
+                <tr><td>Herkunft</td><td>wahrer Deutscher</td></tr>
+                <tr><td>Lieblingszeit</td><td>Abenddämmerung</td></tr>
+				  <tr><td>Name</td><td>Goat</td></tr>
+                <tr><td>Alter</td><td>17</td></tr>
+                <tr><td>Geburtstag</td><td>Moin moin</td></tr>
+                <tr><td>Sprachen</td><td>alle</td></tr>
+                <tr><td>Herkunft</td><td>wahrer Deutscher</td></tr>
+                <tr><td>Lieblingszeit</td><td>Abenddämmerung</td></tr>
+				<tr><td>Lieblingszeit</td><td>Abenddämmerung</td></tr>
+            </table>
+        </div>
+
+        <div class="image-box">
+            <img src="IMG_5532.png" alt="Profilbild">
+        </div>
+    </div>
+
+   
+    <div class="extra">
+        
+        <p>Max ist im Jahr der Ratte geboren </p>
+    </div>
+
+</div>
+
+</body>
+</html>
