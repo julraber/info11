@@ -25,6 +25,7 @@ header {
 	width: 75%;
 	max-height: 12vh;
 	margin: auto;
+	text-align: center;
 	
 	display: flex;
 	gap: 16px;
@@ -38,6 +39,7 @@ main {
 	width: 75%;
 	height: 100vh;
 	margin: auto;	
+	text-align: center;
 }
 
 footer {
