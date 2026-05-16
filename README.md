@@ -1,1 +1,2 @@
-# info11
+# Informatikkurs
+# Addet Dateien nur in eurem Ordner!
