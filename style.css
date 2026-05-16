@@ -25,7 +25,7 @@ header {
 	width: 75%;
 	max-height: 12vh;
 	margin: auto;
-	text-align: center;
+	justify-content: center;
 	
 	display: flex;
 	gap: 16px;
