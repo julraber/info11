@@ -37,7 +37,7 @@ main {
 	padding: 16px 24px;
 	background: #79AF81;
 	width: 50%;
-	height: 100vh;
+	min-height: 90vh;
 	margin: auto;	
 	text-align: center;
 	color: #0B440B;
