@@ -63,17 +63,17 @@
             </div> 
         </div>
         <div id="Navigation">
-            <button onclick="Seiteladen('./Info-Projekt-Website-RmD-Seite 1-Code-1.0-.html')">
+            <button onclick="Seiteladen('*/Info-Projekt-Website-RmD-Seite 1-Code-1.0-.html')">
                 Historie
             <button>
-            <dbutton onclick="Seiteladen('./Info-Projekt-Website-RmD-Seite 2-Code-1.0-.html')">
+            <dbutton onclick="Seiteladen('*/Info-Projekt-Website-RmD-Seite 2-Code-1.0-.html')">
                 Wissen
             </button>
-            <button onclick="Seiteladen('./Info-Projekt-Website-RmD-Seite 3-Code-1.0-.html')">
+            <button onclick="Seiteladen('*/Info-Projekt-Website-RmD-Seite 3-Code-1.0-.html')">
                 DVC-Pakete
             </button> 
         </div>
-        <div id="content">
+        <div id="Mainbox">
             <br>
             <h1>Herzlich Willkommen</h1>
             <br>
@@ -106,8 +106,11 @@
             function Seiteladen(seite) {
                 fetch(seite)
                 .then(response => response.text())
-                .then(data => {document.getElementById("content").innerHTML = data;})
-                .catch(error => console.error("Fehler:",error));}
+                .then(data => {
+                    document.getElementById("content").innerHTML = data;
+                })
+                .catch(error => console.error("Fehler:",error));   
+            }
         </script>
     </body>
  </html>
