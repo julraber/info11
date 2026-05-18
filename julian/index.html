@@ -30,9 +30,9 @@
 				<script>
 							function Seiteladen(datei)	{
 									fetch(datei)
-									.then(antwort=> antwort.text)()
+									.then(antwort=> antwort.text())
 									.then(inhalt=> {
-										document.getElementById("untenmitte").innerHTML=inhalt;
+										document.getElementById("untengross").innerHTML=inhalt;
 										})
 										
 									.catch(error=>
