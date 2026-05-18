@@ -33,7 +33,7 @@ body {
 /* NAVBAR */
 .toolbar {
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1000;
     display: flex;
@@ -53,7 +53,7 @@ body {
     position: relative;
 }
 
-/*  Hover Linie */
+/*  Hover Linie 
 .toolbar button::after {
     content: "";
     position: absolute;
@@ -67,7 +67,7 @@ body {
 
 .toolbar button:hover::after {
     width: 100%;
-}
+} */
 
 /* CONTENT */
 #mainbox {
