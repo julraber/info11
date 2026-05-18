@@ -39,14 +39,14 @@
 
             <script>
                 function Seiteladen(datei) {
-                    fetch()
-                    .then(antwort => antwort.text(datei))
+                    fetch(datei)
+                    .then(antwort => antwort.text())
                     .then(inhalt => {
-                        document.getElementById("mainbox").innerHTML=inhalt;
+                        document.getElementById("main_box").innerHTML=inhalt;
                     })
 
                     .catch(error =>
-                        {document.getElementById("mainbox").innerHTML="<p>Fehler beim Laden der Seite.</p>";
+                        {document.getElementById("main_box").innerHTML="<p>Fehler beim Laden der Seite.</p>";
                             console.error(error);
                         });
                 }
