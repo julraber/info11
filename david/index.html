@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Startseite</title>
+            <meta charset="UTF-8">
+            <link href="style.css" rel="stylesheet">
+        </head>
+        <body>
+            <div id="head_line">
+                <img src="logo.jpg" alt="logo" width="100vh" >
+                <h1>Azaz Music</h1>
 
+            </div>
+
+            <div id="control_line">
+                <button id="knopf" onclick="Seiteladen('./index.html')">Startseite</button>
+                <button id="knopf" onclick="Seiteladen('./Seite_2.html')">Singles</button>
+                <button id="knopf" onclick="Seiteladen('./Seite_3.html')">Equipment</button>
+                <button id="knopf" onclick="Seiteladen('./Seite_4.html')">Impressum</button>
+            </div>
+            
+            <div id="main_box">
+                <br>
+                <h2>Willkommen bei Azaz Music</h2>
+                <br>
+
+                Das erwartet dich hier:
+                <br>
+                <ul>
+                <li>Exklusive Releases & Musikvideos: Sei der Erste, der neue Tracks und Singles hört. Von atmosphärischen Visualizern bis hin zu offiziellen Musikvideos – hier bekommt jeder Song sein passendes Gesicht.
+                </li> <br>
+                <li>High-Quality Beats & Instrumentals: Du bist selbst Künstler oder Creator? Wir liefern regelmäßig frische Type Beats und Instrumentals aus verschiedenen Genres, die deinen Projekten das nächste Level verpassen.
+                </li> <br>
+                <li>Behind the Scenes & Studio-Vlogs: Wir lassen die Maske fallen. Schau uns über die Schulter und erlebe hautnah mit, wie aus einer ersten Idee im Studio ein fertiger, gemasterter Track entsteht.
+                </li> <br>
+                <li>Remixe & Mixe: Überraschende Neuinterpretationen bekannter Hits im typischen Azaz-Music-Stil und exklusive Playlists zum Mitbouncen, Abschalten oder Fokussieren.</li>
+                </ul>
+            </div>
+
+            <script>
+                function Seiteladen(datei) {
+                    fetch()
+                    .then(antwort => antwort.text(datei))
+                    .then(inhalt => {
+                        document.getElementById("mainbox").innerHTML=inhalt;
+                    })
+
+                    .catch(error =>
+                        {document.getElementById("mainbox").innerHTML="<p>Fehler beim Laden der Seite.</p>";
+                            console.error(error);
+                        });
+                }
+            </script>
+        </body>
+    </html>

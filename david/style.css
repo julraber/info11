@@ -1,0 +1,75 @@
+                #body {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 50px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    color: aliceblue;
+                    }
+
+                #head_line {
+                    background-color: rgb(255, 255, 255);
+                    margin: 0vh 10vh 0vh 10vh;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+
+                #control_line {
+                    background-color: rgb(61, 61, 61);
+                    margin: 0vh 0vh 0vh 0vh;
+                    height: 5vh;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 15%;
+                    position: sticky;
+                    top: 0px;
+                }
+
+                .knopf{
+                    margin: 1vh 3vh 1vh 3vh;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex: 0 0 30;
+                    width: 30%;
+                    color: rgb(255, 255, 255);
+
+                }
+
+                #main_box {
+                    background-color: rgb(131, 131, 131);
+                    margin: 0vh 10vh 10vh 10vh;
+                    color: white;
+                    text-align: center;
+                    font-size: 22px;
+                    height: 100vh;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                table, th, td {
+                    border: 1px solid white;
+                }
+
+                th {
+                    text-align: center;
+                    height: 50px;
+                }
+
+                td {
+                    padding: 10px;
+                }
+
+                a {
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: blue;
+                    text-decoration: underline;
+                }
