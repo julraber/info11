@@ -19,7 +19,7 @@
         
         </div>
         
-        <div id="main">
+        <div class="main">
         <p></p>
         <div class="box1">
             <img src="london-skyline.jpg" alt="london-skyline">
@@ -57,10 +57,10 @@
         </div>
         <script>
         function Seiteladen(seite) {
-            fetch(seite)
+        fetch(seite)
             .then(response => response.text())
             .then(data => {
-            document.getElementById("main").innerHTML = data;
+            document.getElementById("content").innerHTML = data;
         })
         .catch(error => console.error("Fehler:", error));
         }

@@ -31,7 +31,7 @@ border-radius: 5px;
 font-weight: bold; 
 }
 
-#main {
+.main {
 background-color: rgb(13, 116, 47);
 margin-left: 50px; 
 margin-right: 50px; 
