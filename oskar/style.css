@@ -11,7 +11,7 @@ header{
     display: flex;
     align-items: center;
     color: white;
-     position: relative;
+    position: relative;
     z-index: 11;
     animation: header 2s ease forwards;
 }
@@ -50,8 +50,8 @@ header h1{
 nav{
     z-index: 10;
     transition: transform 0.75s ease;
-	position: sticky;
-	top: 0;
+    position: sticky;
+    top: 0;
     display: flex;
     background-color: #0ca36e;
     height: 50px;
@@ -80,10 +80,11 @@ nav a{
 }
 
 
-nav a:hover{
+nav a:hover, footer a:hover{
     transform: scale(1.01);
     background-color: #12aa75;
     font-size: bold;
+    cursor: pointer;
 }
 
 
@@ -120,7 +121,7 @@ nav a:hover{
 	border-radius: 8px;
 	max-width: 400px;
 	max-height: 400px;
- }
+  }
 .card1{
     background-color: white;
     flex: 0 0 30%;
@@ -164,4 +165,8 @@ footer{
     align-items: center;
     height: 100px;
     width: 100%;
+}
+
+footer a{
+  padding: 10px 50px;
 }

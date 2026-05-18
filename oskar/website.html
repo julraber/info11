@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="trigger">		
+            <img src="gr.png" alt="">
+        </div>
+        <h1>Willkommen</h1>
+    </header>
+    <nav id="nav">
+        <a onclick="change('p1.html')">Pflanzen</a>
+        <a onclick="change('p2.html')">Umweltschutz</a>
+        <a onclick="change('p3.html')">Tipps</a>
+    </nav>
+    <div class="content">
+        <div id="maincontent" class="card0">
+            <div class="main">
+                <h2>Was bedeutet „grün“?</h2>
+				
+                <p>
+					<img src="image.png" alt="">
+                    „Grün“ steht für Natur, Leben und Nachhaltigkeit. Es erinnert uns daran, wie wichtig Pflanzen, Wälder und eine saubere Umwelt für unser Leben sind.
+					<br>
+					<br>
+					Auf dieser Website erfährst du mehr über Pflanzen, Umweltschutz und wie du selbst nachhaltiger leben kannst. Dabei zeigen wir dir einfache Tipps für den Alltag, spannende Fakten über die Natur und Möglichkeiten, wie jeder Einzelne einen Beitrag zum Schutz unserer Erde leisten kann.
+					<br>
+					<br>
+					Ob es um das richtige Pflanzen im eigenen Garten, den bewussten Umgang mit Ressourcen oder umweltfreundliche Alternativen im täglichen Leben geht – hier findest du Inspiration und praktische Ideen. Wir erklären dir zum Beispiel, wie du Wasser und Energie sparen kannst, wie Müllvermeidung funktioniert und warum Recycling so wichtig ist. Außerdem stellen wir dir verschiedene Pflanzenarten vor und geben dir hilfreiche Hinweise zur Pflege – egal, ob du Anfänger oder schon erfahrener Pflanzenfreund bist.
+					<br>
+					<br>
+					Ein weiterer Schwerpunkt liegt auf dem Schutz unserer Umwelt: Du erfährst, warum Artenvielfalt so wichtig ist, welche Gefahren unserer Natur drohen und wie wir gemeinsam dagegen vorgehen können. Kleine Veränderungen im Alltag – wie der Verzicht auf Plastik, regionales Einkaufen oder die Nutzung öffentlicher Verkehrsmittel – können bereits einen großen Unterschied machen.
+					<br>
+					<br>
+					Darüber hinaus möchten wir dich dazu motivieren, die Natur bewusster wahrzunehmen und zu schätzen. Ob bei einem Spaziergang im Wald, beim Beobachten von Tieren oder beim Anlegen eines eigenen kleinen Gartens – die Natur bietet uns nicht nur Lebensgrundlagen, sondern auch Erholung und Inspiration.
+					<br>
+					<br>
+					Gemeinsam können wir lernen, die Natur besser zu verstehen und verantwortungsvoll mit ihr umzugehen, damit auch zukünftige Generationen in einer gesunden und grünen Welt leben können. Jeder Schritt zählt – und genau hier beginnt dein Weg zu mehr Nachhaltigkeit. 🌱
+                </p>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="news-content">
+            <h1>News</h1>
+            <h2>🌍 Umwelt & Klima</h2>
+                <ul class="news">
+                    <li>Klimawandel führt zu steigenden Temperaturen</li>
+                    <li>Gletscher schmelzen schneller</li>
+                </ul>
+
+                <h2>🌱 Natur & Pflanzen</h2>
+                <ul class="news">
+                    <li>Mehr Aufforstungsprojekte weltweit</li>
+                    <li>Städte werden grüner</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <a onclick="change('Impressum_kontakt.html')">Impressum</a>
+    </footer>
+
+    <script>
+        let x = 0;
+        function change(datei){
+            fetch(datei)
+            .then(antwort => antwort.text())
+            .then(inhalt => {
+                document.getElementById("maincontent").innerHTML=inhalt;
+            })
+
+            .catch(error => {document.getElementById("maincontent").innerHTML = "<p>Fehler beim laden der Seite</p>";
+                console.error(error);
+            })
+        }
+        const trigger = document.getElementById("trigger");
+        const box1 = document.getElementById("maincontent");
+
+        trigger.addEventListener("click", () => {
+            trigger.classList.toggle("rotate");
+        });
+    </script>
+</body>
+</html>
