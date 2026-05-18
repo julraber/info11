@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>interaktive seite</title>
+				<meta charset="UTF-(8)">
+				<link rel="stylesheet" href="style.css">
+			
+		</head>
+	
+			<body>
+				<div id="obenlinks"><a href="interaktivewebsite.html"><img src="kibild.jpg" width="100%" height="100%"></a></div>
+				<div id="obenmitte"><div>Seite für viele geniale Ideen</div></div>
+				<div id="steuerleiste">			<button id="seitenwechsel" onclick="Seiteladen('./Seite 1.html')"> Fotos für geniale Ideen</button>
+												<button id="seitenwechsel" onclick="Seiteladen('./Seite 2.html')"> Videos für geniale Ideen</button>
+												<button id="seitenwechsel" onclick="Seiteladen('./Seite 4.html')"> Sicherheitsanweisungen</button>
+												<button id="seitenwechsel" onclick="Seiteladen('./Seite 3.html')"> Impressum der genialen Ideen</button>
+												  
+				</div>
+				<div id="untengross">Willkommmen auf dieser Website. <br>
+					Hier erfährst du alles über die genialsten Sachen die es so auf der Erde gibt, falls du und deine Freunde mal Langeweile haben.<br>
+					<img id="baum" src="baum-neu.jpg" width="80%">
+				
+				
+				
+				
+				
+				
+				</div>
+				
+				<script>
+							function Seiteladen(datei)	{
+									fetch(datei)
+									.then(antwort=> antwort.text)()
+									.then(inhalt=> {
+										document.getElementById("untenmitte").innerHTML=inhalt;
+										})
+										
+									.catch(error=>
+										{document.getElementById("untenmitte").innerHTML = "<p>Fehler beim Laden der Seite.</p>";
+											console.error(error);
+										});
+							}
+				</script>
+			
+			</body>
 
+	
+	</html>
