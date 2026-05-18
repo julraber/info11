@@ -73,7 +73,7 @@
                 DVC-Pakete
             </button> 
         </div>
-        <div id="Mainbox">
+        <div id="content">
             <br>
             <h1>Herzlich Willkommen</h1>
             <br>
@@ -106,11 +106,8 @@
             function Seiteladen(seite) {
                 fetch(seite)
                 .then(response => response.text())
-                .then(data => {
-                    document.getElementById("content").innerHTML = data;
-                })
-                .catch(error => console.error("Fehler:",error));   
-            }
+                .then(data => {document.getElementById("content").innerHTML = data;})
+                .catch(error => console.error("Fehler:",error));}
         </script>
     </body>
  </html>
