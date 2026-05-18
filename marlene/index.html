@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Humboldt Gymnasium Nordhausen</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script>
+        function loadPage(seite) {
+            fetch(seite)
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("mainbox").innerHTML = data;
+                });
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="oben">
+            <div class="Titel">
+                <h1>Humboldt Gymnasium Nordhausen</h1>
+            </div>
+
+            <div class="Bild">
+                <img src="Logo.jpg" alt="Schule">
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="toolbar">
+            <button onclick="loadPage('seite1.html')">Start</button>
+            <button onclick="loadPage('seite2.html')">Schule</button>
+            <button onclick="loadPage('seite3.html')">Angebote</button>
+            <button onclick="loadPage('seite4.html')">Geschichte</button>
+            <button onclick="loadPage('kontakt.html')">Kontakt</button>
+            <button onclick="loadPage('impressum.html')">Impressum</button>
+        </div>
+    </nav>
+
+    <main>
+        <div id="mainbox">
+            <h2>Willkommen!</h2>
+            <p>Willkommen auf der Website des Humboldt Gymnasiums in Nordhausen.
+                Nutze die Navigation oben, um mehr über unsere Schule, unsere Angebote und unsere Geschichte zu
+                erfahren.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div id="unten">
+            <button onclick="loadPage('kontakt.html')">Kontakt</button> |
+            <button onclick="loadPage('impressum.html')">Impressum</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>
