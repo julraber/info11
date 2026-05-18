@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Rebo - Rebuild it!</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+   
+<div id="Uberschrift">
+    <marquee scrollamount="15"><b>Willkommen bei Rebo - Rebuild it!</b></marquee>
+</div>
+  
+
+
+    <div id="Leiste">
+                <button class="Liste" onclick="Open('./seite1.html')">Materialien</button>
+                <button class="Liste" onclick="Open('./seite2.html')">Produkte</button>
+                <button class="Liste" onclick="Open('./seite3.html')">Impressum</button>
+                <button class="Liste" onclick="Open('./seite4.html')">Neuigkeiten</button>
+    </div>
+
+    <div id="box">
+        <div class="text-inhalt">
+            Rebo – rebuild it entstand vor gerade einmal anderthalb Monaten – mitten in einer Informatikstunde.
+            Was zuerst nur eine spontane Idee für ein Schulprojekt war, entwickelte sich schnell zu mehr: der Wunsch, Kreativität, Technik und die Begeisterung für Klemmbausteine miteinander zu verbinden.
+            Der Name „Rebuild it“ steht für genau das, was unsere Modelle ausmacht: Dinge neu denken, umbauen und immer wieder etwas Eigenes erschaffen. Für uns sind Klemmbausteine nicht nur Spielzeug, sondern eine Möglichkeit, Ideen sichtbar zu machen und Fantasie Realität werden zu lassen.
+            Seit der ersten Idee arbeiten wir daran, kreative Sets, eigene Designs und neue Baukonzepte zu entwickeln. Dabei stehen Spaß, Innovation und die Freude am Bauen immer im Mittelpunkt.
+            Auch wenn Rebo – rebuild it noch jung ist, steckt bereits jetzt viel Leidenschaft in jedem einzelnen Projekt.
+        </div>
+        
+        <img src="Rebo-lol.png" class="bild"> 
+    </div>
+       <script>
+
+
+            function Open(seite) {
+                fetch(seite)
+                .then(antwort => antwort.text())
+                .then(inhalt=>{
+                    document.getElementById("box").innerHTML=inhalt;
+                })
+            }
+
+
+        </script>
+</body>
+</html>
