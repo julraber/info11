@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>
+          Daslight  
+        </title>
+        <meta charset="UTF-8">
+        <style>
+            #body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 50px;
+                display:flex;
+                flex-wrap:wrap;
+            }
+            #Logo{
+                background-color: rgb(255, 140, 140);
+                margin: 0vh 15vh 0vh 15vh;
+                display:flex;
+                flex-wrap:wrap;
+                align-items: center;
+            }
+            #Navigation{
+                background-color: rgba(155, 155, 155, 0.897);
+                margin: 0vh 0vh 0vh 0vh;
+                height: 5vh;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;				gap: 10%;
+                position: sticky;
+                top: 0px;
+            }
+            #Mainbox{
+                background-color: rgba(182, 182, 182, 0.938);
+                margin: 0vh 15vh 0vh 15vh;
+                height: 140vh;
+                display: block;
+                text-align: center;
+            }
+            #Impressum{
+                background-color: rgb(110, 110, 110);
+                margin: 0vh 15vh 0vh 15vh;
+            }
+            #Website-Ueberschrift{
+                background-color: rgb(163, 163, 163);
+                margin: 5vh 30vh 0vh 30vh;
+            }
+            .knopf{
+                margin: 1vh 3vh 1vh 3vh;
+                display: flex;
+                flex-wrap: wrap;
+                flex: 0 0 30;
+                width: 30%;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Logo">
+            <img src="daslight-logo.jpg" width="95vh">
+            <div id="Website Ueberschrift">
+               <h2><a style="color: rgb(255, 140, 140);">-----</a></strong>Daslight und mehr</h2>
+            </div> 
+        </div>
+        <div id="Navigation">
+            <button onclick="Seiteladen('*/Info-Projekt-Website-RmD-Seite 1-Code-1.0-.html')">
+                Historie
+            <button>
+            <dbutton onclick="Seiteladen('*/Info-Projekt-Website-RmD-Seite 2-Code-1.0-.html')">
+                Wissen
+            </button>
+            <button onclick="Seiteladen('*/Info-Projekt-Website-RmD-Seite 3-Code-1.0-.html')">
+                DVC-Pakete
+            </button> 
+        </div>
+        <div id="Mainbox">
+            <br>
+            <h1>Herzlich Willkommen</h1>
+            <br>
+            Licht ist mehr als nur Helligkeit – es erzeugt Emotionen, untermalt Beats und macht jedes Event unvergesslich. 
+            <br>
+            Egal, ob du clubtaugliche Lightshows programmieren, deine Band perfekt in Szene setzen oder als DJ die Tanzfläche zum Kochen bringen willst: 
+            <br>
+            Mit Daslight hast du die volle Kontrolle über deine DMX-Geräte
+            <br>
+            <p><br></p>
+            <img src="WhatsApp Image 2026-05-18 at 15.49.08.jpeg" alt="Daslight" width="500">
+            <p><br></p>
+            So kann euer mit Daslight Erstelltest Opening zum Beispiel aussehen.
+            <br>
+            Euch sind dabei keine Grenzen Gesetzt.
+            <br>
+            Werde mit Daslight zum nähsten Jerry Appelt und ziehe Zuschaur in den bann deiner Lichtkunst.
+        </div>
+        <div id="Impressum">
+            Impressum
+            <br>
+            Kornelius Schumann
+            <br>
+            Tel.: 015753629675
+            <br>
+            EMail.: kornelius.schumann09@gmail.com
+        </div>
 
+        <script>
+            function Seiteladen(seite) {
+                fetch(seite)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("content").innerHTML = data;
+                })
+                .catch(error => console.error("Fehler:",error));   
+            }
+        </script>
+    </body>
+ </html>
