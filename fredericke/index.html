@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="bildchenbg">
+            <header>
+            <img src="SUF_logo--bessere qualli w k.png"  id="ues">
 
+            </header>
+            <nav>
+                <button onclick="load('./shop.html')" class="navi" href="#">SHOP</button>
+                <button onclick="load('./weinsorti.html')" class="navi" href="#">WEINSORTIMENT</button>
+                <button onclick="load('./winzer.html')" class="navi" href="#">WINZER</button>
+                <button onclick="load('./kontakt.html')" class="navi" href="#">KONTAKT</button>
+                <button onclick="load('./impressum.html')" class="navi" href="#">IMPRESSUM</button>
+            </nav>
+        </div>
+            <div id="mainbox">
+                <div id="boxibox">
+                    <br>Weinhandlung Suff, seit 1989 in Berlin Kreuzberg.<br>
+                    <hr>
+                    <p> UNSERE LÄDEN:</p>
+                    <br>
+                    <iframe 
+                        src="https://www.google.com/maps/d/embed?mid=1tI5ImfydP7C5z1I_wPkrTlciomrYfZjl&ehbc=2E312F" 
+                        width="640" 
+                        height="480"
+                        >
+                    </iframe>
+                    <br>
+                    <br> 
+                    <hr>
+                    <br>Gestartet als Kiez Weinhandlung sind wir mittlerweile mit sieben Läden in <p>Kreuzberg, 
+                    Charlottenburg, Wilmersdorf, Prenzlauer Berg und Friedrichshain </p> für euch da.
+                    Von unserem SUFF Büro & Lager in Neukölln versorgen wir dich, unsere Läden und das ganze Spektrum der Berliner Gastronomie mit 
+                    handwerklich erzeugten Weinen.<br><br>
+                </div>
+            </div>
+    </body>
+
+    <script>
+        function load(datei) {
+            fetch(datei)
+            .then(antwort => antwort.text())
+            .then(inhalt => {
+
+                document.getElementById("mainbox").innerHTML=inhalt;
+
+            })
+            .catch(error =>
+                {document.getElementById("mainbox").innerHTML="<p>Fehler beim Laden der Seite.</p>";
+                console.error(error);
+            });
+        }
+    </script>
+</html>
