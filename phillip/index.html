@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="interacktiveseite.css">
+    </head>
+    <body> 
+        <div class="kopf">
+        <h1>Interactive Tourist Guide</h1>
+        </div>
+        <div class="navigation">
+        
+        <center><nav>
+            <button onclick="Seiteladen('./index.html')">Allgemein</button>
+            <button onclick="Seiteladen('./Seite2.html')">Sehenswürdigkeiten</button>
+            <button onclick="Seiteladen('./Seite3.html')">Kosten</button>
+        </nav></center>
+        
+        </div>
+        
+        <div class="main">
+        <p></p>
+        <div class="box1">
+            <img src="london-skyline.jpg" alt="london-skyline">
+            <p class="Überschrift">LONDON</p>
+            <p>-Hauptstadt von England und dem Vereinigten Königreich </p>
+            <p>-Bekannt für den Big Ben, den Buckingham Palace und die Tower Bridge </p>
+            <p>-Die Themse fließt durch die Stadt </p>
+            <p>-Eine der wichtigsten Finanzmetropolen der Welt</p>
+        </div>
+        <div class="box2">
+            <img src="paris.jpg" alt="paris">
+            <p class="Überschrift">PARIS</p>
+            <p>-Hauptstadt von Italien </p>
+            <p>-Wird oft „Die Ewige Stadt“ genannt</p>
+            <p>-Berühmt für das Kolosseum und den Vatikan </p>
+            <p>-Zentrum des ehemaligen Römischen Reiches </p>
+        </div>
+        <div class="box3">
+            <img src="11844-iStock-alxpin-trevi-brunnen-rom-sehenswuerdigkeiten.webp" alt="11844-iStock-alxpin-trevi-brunnen-rom-sehenswuerdigkeiten">
+            <p class="Überschrift">ROM</p>
+            <p>-Hauptstadt von Frankreich</p>
+            <p>-Bekannt für den Eiffelturm und den Louvre</p>
+            <p>-Liegt an der Seine </p>
+            <p>-Gilt als wichtige Stadt für Kunst, Mode und Kultur </p>
+        </div>
+        </div>
 
+    
+        </div>
+        <div class="footer">
+            Impressum 
+        <p>Besitzer</p>
+        <p>99734 Nordhausen</p>
+        <p>Email</p>
+        </div>
+        <script>
+        function Seiteladen(seite) {
+        fetch(seite)
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("content").innerHTML = data;
+        })
+        .catch(error => console.error("Fehler:", error));
+        }
+        </script>
+        
+        
+       
+    </body>
+</html>
