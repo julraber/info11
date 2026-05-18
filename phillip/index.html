@@ -13,8 +13,8 @@
         
         <center><nav>
             <button onclick="Seiteladen('./index.html')">Allgemein</button>
-            <button onclick="Seiteladen('./Seite2 (1).html')">Sehenswürdigkeiten</button>
-            <button onclick="Seiteladen('./Seite3 (1).html')">Kosten</button>
+            <button onclick="Seiteladen('./Seite2.html')">Sehenswürdigkeiten</button>
+            <button onclick="Seiteladen('./Seite3.html')">Kosten</button>
         </nav></center>
         
         </div>
@@ -57,7 +57,7 @@
         </div>
         <script>
         function Seiteladen(seite) {
-        fetch(seite)
+            fetch(seite)
             .then(response => response.text())
             .then(data => {
             document.getElementById("main").innerHTML = data;
