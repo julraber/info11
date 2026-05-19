@@ -6,7 +6,7 @@ nav { position: fixed; top: 0; left: 0; width: 100%; height: 50px; background-co
 .logo span { color: #fff; }
 nav button { background-color: #111; color: #ccc; border: 1px solid #444; padding: 5px 12px; font-size: 14px; cursor: pointer; }
 
-.seiteninhalt { margin-top: 50px; display: flex; flex-direction: column; align-items: center; padding: 24px 16px; }
+#seiteninhalt { margin-top: 50px; display: flex; flex-direction: column; align-items: center; padding: 24px 16px; }
 .überschrift-box, .haupt-box { width: 100%; max-width: 800px; background-color: #1a1a1a; border: 1px solid #333; padding: 20px 24px; }
 .haupt-box { border-top: none; }
 .überschrift-box h1 { font-size: 24px; color: #fff; }
