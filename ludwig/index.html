@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>F1 Info – Startseite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav>
+    <div class="logo">F1<span>Info</span></div>
+    <button onclick="Seiteladen(./startseite.html)">Startseite</button>
+    <button onclick="Seiteladen(./fahrer.html)">Fahrer</button>
+    <button onclick="Seiteladen(./teams.html)">Teams</button>
+    <button onclick="Seiteladen(./Impressum.html)">Impressum</button>
+</nav>
+
+<div class="seiteninhalt">
+    <div class="überschrift-box">
+        <h1>Formel 1 – Übersicht</h1>
+        <p>Alles Wichtige rund um die schnellste Rennserie der Welt</p>
+    </div>
+    <div class="haupt-box">
+        <h2>Was ist die Formel 1?</h2>
+        <p>Die <strong>Formel 1</strong> ist die höchste Klasse im Automobilrennsport, geregelt vom Weltverband FIA. Seit <strong>1950</strong> wird jährlich eine Fahrer-Weltmeisterschaft ausgetragen, seit 1958 auch eine Konstrukteurs-WM.</p>
+        <p>Die Saison 2026 steht unter dem Zeichen eines neuen Reglements mit <strong>50 Prozent Elektroanteil</strong>. Mercedes dominiert bisher den Auftakt mit Antonelli und Russell auf den ersten beiden Plätzen.</p>
+
+        <h2>Grundbegriffe</h2>
+        <div class="karten-raster">
+            <div class="karte">
+                <h3>Aerodynamik</h3>
+                <p>Flügel und Karosserie erzeugen Abtrieb, der das Auto in die Strecke drückt.</p>
+            </div>
+            <div class="karte">
+                <h3>Boxenstopp</h3>
+                <p>Reifenwechsel während des Rennens – oft in unter 3 Sekunden.</p>
+            </div>
+            <div class="karte">
+                <h3>DRS</h3>
+                <p>Beweglicher Heckflügel, der das Überholen erleichtert.</p>
+            </div>
+            <div class="karte">
+                <h3>Punktesystem</h3>
+                <p>Platz 1–10 erhält Punkte (25–1) plus 1 Bonuspunkt für die schnellste Runde.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function Seiteladen(seite){
+  fetch(seite)
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('seiteninhalt').innerHTML = html;
+    });
+}
+</script>
+
+<footer>F1Info &nbsp;|&nbsp; Ludwig Marx &nbsp;|&nbsp; Mai 2026</footer>
+
+</body>
+</html>
