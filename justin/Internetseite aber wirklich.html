@@ -1,0 +1,53 @@
+<!Doctype HTML>
+<html  lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mr.Fister.com</title>
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="uberschrift"><img src="Mr.Fister bild.png" class="bildo"><h1>Mr.Fister</h1></div>
+        <div id="Leiste"><nav>
+            <button class="liste" onclick="Open('./seite0.html')">Home</button>
+            <button class="liste" onclick="Open('./seite3.html')">Inhaltsstoffe</button>
+            <button class="liste" onclick="Open('./seite2.html')">Info</button>
+            <button class="liste" onclick="Open('./seite1.html')">Impressum</button> 
+                </nav></div>
+        <div id="Box">
+<h1>Willkommen bei Mr. Fister – Der Schoko‑Nuss‑Traum</h1><p></p>
+Mr. Fister ist kein gewöhnliches Eis. Es ist die perfekte Verbindung aus cremiger Schokolade, gerösteten Haselnüssen und einer Prise Unwiderstehlichkeit. Jeder Löffel erzählt eine Geschichte: von sorgfältig ausgewählten Zutaten, echter Handwerkskunst und purer Leidenschaft für Geschmack.
+<p></p>
+Hier trifft zartschmelzende Schokolade auf den knackigen Biss frisch gerösteter Nüsse – ein Erlebnis, das Gaumen und Herz gleichermaßen verführt.
+<p></p>
+Ob an heißen Sommertagen oder als süßer Moment zwischendurch: Mr. Fister ist immer eine gute Idee.
+Gönn dir den Unterschied – cremig, nussig, ehrlich lecker.
+maxh den Text etwas länger aber behalte alle Kernaussagen
+
+Willkommen bei Mr. Fister – Der Schoko-Nuss-Traum<p></p>
+Mr. Fister ist kein gewöhnliches Eis. Es ist die perfekte Verbindung aus cremiger Schokolade, gerösteten Haselnüssen und einer Prise Unwiderstehlichkeit. 
+Jeder Löffel erzählt eine Geschichte: von sorgfältig ausgewählten Zutaten, echter Handwerkskunst und purer Leidenschaft für Geschmack.
+
+<p></p> Bei jedem Bissen entfaltet sich ein harmonisches Zusammenspiel aus zartschmelzender Schokolade und dem intensiven Aroma knackiger Haselnüsse. Die cremige Konsistenz sorgt dafür, dass sich der Geschmack langsam im Mund entfaltet und ein besonders vollmundiges Eis-Erlebnis entsteht.
+ <p></p> Hier trifft zartschmelzende Schokolade auf den knackigen Biss frisch gerösteter Nüsse – ein Erlebnis, das Gaumen und Herz gleichermaßen verführt. Die ausgewogene Kombination aus süß, nussig und cremig macht jede Portion zu einem kleinen Genussmoment. <p></p> Ob an heißen Sommertagen, als süße Belohnung nach einem langen Tag oder einfach als kleiner Genuss zwischendurch: Mr. Fister ist immer eine gute Idee. Es ist mehr als nur ein Dessert – es ist ein Moment zum Genießen. 
+<p></p> Gönn dir den Unterschied – cremig, nussig, ehrlich lecker.
+
+
+
+        </div>
+
+    <script>
+        function Open(seite){
+            fetch(seite)
+            .then(antwort => antwort.text())
+            .then(inhalt => {
+                    document.getElementById("Box").innerHTML=inhalt;
+        })
+
+
+            }
+    
+
+    </script>
+    </body>
+</html>

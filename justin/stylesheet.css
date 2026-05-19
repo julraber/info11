@@ -1,0 +1,84 @@
+
+            body{
+              background: #e9ccbc;
+              
+            }
+            #uberschrift{
+                display: flex;
+                font-size: 40px;
+                padding: 5vh 5vh 5vh 5vh;
+                align-items: center;
+                margin-left: 4vh;
+                margin-right: 4vh;
+                justify-content: left;
+                color:#F6E7C1;
+                background: #4B2E1E;
+                border-radius: 10px;
+            }
+ 
+
+            .bildo{
+                height:20%;
+                width:20%;
+                border-radius: 100%;
+
+            }
+
+            #Leiste{
+                flex:0 0 100%;
+                background:#C58A4A;
+                align-items: center;
+                color:white;
+                justify-content: center;
+                text-align: center;
+                position: sticky;
+                top: 0;
+                 border-radius: 10px;
+
+            }
+            .liste{
+                width: 150px;
+                height: 90px;
+                margin-left: 5vh;
+                background-color: #f0eada;
+                 border-radius: 20px;
+                 font-size: 24px;
+            }
+            .liste:hover {
+                background-color: #6FAF6A;
+;
+            }
+            .liste:active{
+                background-color: white;
+            }
+
+            #Box{
+                width: 90%;
+                height:flex;
+                background: #8B5A2B;
+                margin: auto;
+                font-size: 24px;
+                 border-radius: 10px;
+            }
+
+            table {
+  border-collapse: collapse;
+  width: 400px;
+  background-color: #F6E7C1; /* Vanille */
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: #4B2E1E; /* Schokolade */
+  color: white;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #8B5A2B; /* Nussbraun */
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #E8CFA5; /* Waffel Farbe */
+}
