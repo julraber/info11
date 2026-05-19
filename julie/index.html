@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Reisen</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function loadPage(seite) {
+            fetch(seite)
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("mainbox").innerHTML = data;
+
+                });
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="oben">
+        <div class="Titel">
+            <h1>Finden Sie Ihre Traumreise!</h1>
+        </div>
+
+        <div class="Bild">
+            <img src="2.jpg" alt="Strand">
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="toolbar">
+            <button onclick="loadPage('./seite1.html')">Start</button>
+            <button onclick="loadPage('./seite2.html')">Orte</button>
+            <button onclick="loadPage('./seite3.html')">Angebote</button>
+            <button onclick="loadPage('./kontakt.html')">Kontakt</button>
+            <button onclick="loadPage('./impressum.html')">Impressum</button>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main>
+        <div id="mainbox">
+            <h2>Willkommen!</h2>
+            <div class="Bild">
+                <img src="info.jpg" alt="info">
+                <div>
+                    <p>Willkommen auf der Website für Ihre Traumreise.</p>
+
+                    <p>Hier findest du Informationen über das Reisen, unsere Angebote und Tipps.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="unten">
+        <button onclick="loadPage('./kontakt.html')">Kontakt</button> |
+        <button onclick="loadPage('./impressum.html')">Impressum</button>
+    </footer>
+
+</body>
+
+</html>
