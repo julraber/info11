@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>GamerHub.com</title>
+
+  	 <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <header>
+        <img src="logo.jpg" class="logo">
+        <h1>Willkommen bei GamerHub</h1>
+    </header>
+    <nav class="button box">
+
+        <button onclick="Seiteladen('home.html')"> Home </button>
+        <button onclick="Seiteladen('produkte.html')"> Produkte </button>
+        <button onclick="Seiteladen('news.html')"> News </button>
+		  <button onclick="Seiteladen('kontakt.html')"> Kontakt </button>
+		  <button onclick="Seiteladen('impressum.html')"> Impressum </button>
+    </nav>
+
+    <div id="main">
+
+	Willkommen bei GamerHub, eine Website für aktive Zocker
+ 
+    </div>
+
+<script>
+    function Seiteladen(datei) {
+        fetch(datei)
+        .then(antwort => antwort.text())
+        .then(inhalt =>  {
+
+                document.getElementById("main").innerHTML=inhalt;
+        })
+
+    }
+
+
+
+</script>
+
+</body>
+</html>
