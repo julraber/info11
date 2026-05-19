@@ -19,7 +19,7 @@
         
         </div>
         
-        <div class="main">
+        <div id="main">
         <p></p>
         <div class="box1">
             <img src="london-skyline.jpg" alt="london-skyline">
@@ -60,7 +60,7 @@
         fetch(seite)
             .then(response => response.text())
             .then(data => {
-            document.getElementById("content").innerHTML = data;
+            document.getElementById("main").innerHTML = data;
         })
         .catch(error => console.error("Fehler:", error));
         }
