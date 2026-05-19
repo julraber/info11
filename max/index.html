@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Website</title>
+  <link rel="stylesheet" href="zweiter.css">
+</head>
+<body>
 
+  <div class="Navigation">
+    <img id="bild1" src="meme.jpg" alt="Smiley" onclick="change('startseite')"">
+    
+    <nav>
+      <a href="#" class="tab-link navinh" onclick="change('startseite')">Startseite</a>
+      <a href="#" class="tab-link navinh" onclick="change('ueber.html')">Über mich</a>
+      <a href="#" class="tab-link navinh" onclick="change('Projekt.html')">Projekte</a>
+      <a href="#" class="tab-link navinh" onclick="change('Projektübersicht.html')">Projektübersicht</a>
+      <a href="#" class="tab-link navinh" onclick="change('kontakt.html')">Kontakt</a>
+      <a href="#" class="tab-link navinh" onclick="change('Impressum.html')">Impressum</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h1>Willkommen auf meiner Website</h1>
+    <p>Dein Einstieg in meine Welt</p>
+  </div>
+
+  <div class="container2" id="mainbox">
+    <h1>Willkommen auf meiner Website</h1>
+
+    <img src="meme.jpg" alt="Website Bild" width="500">
+
+    <p>
+      Willkommen auf meiner persönlichen Website.
+      Hier findest du Informationen über mich,
+      meine Projekte und meine Interessen rund
+      um Webdesign und Programmierung.
+    </p>
+
+    <p>
+      Diese Website wurde mit HTML, CSS und JavaScript erstellt.
+      Sie dient als Lernprojekt und wird regelmäßig erweitert.
+    </p>
+
+    <h2>Was dich hier erwartet</h2>
+
+    <p>
+      ✔ Informationen über mich <br>
+      ✔ Eigene Projekte <br>
+      ✔ Moderne Webseitenideen <br>
+      ✔ Kontaktmöglichkeiten
+    </p>
+  </div>
+
+  <script>
+    
+    const originalInhalt = document.getElementById("mainbox").innerHTML;
+
+    function change(datei) {
+      
+      if (datei === "startseite") {
+        document.getElementById("mainbox").innerHTML = originalInhalt;
+        return;
+      }
+
+      fetch(datei)
+        .then(antwort => antwort.text())
+        .then(inhalt => {
+          document.getElementById("mainbox").innerHTML = inhalt;
+        })
+        .catch(error => {
+          document.getElementById("mainbox").innerHTML = "<p>Fehler beim laden der Seite</p>";
+          console.error(error);
+        });
+    }
+  </script>
+
+</body>
+</html>
