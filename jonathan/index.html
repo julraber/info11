@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Ascend Aesthetics</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function loadPage(seite) {
+            fetch(seite)
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("content-area").innerHTML = data;
+                });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Ascend Aesthetics</h1>
+        <nav>
+            <button onclick="loadPage('./home.html')">Home</button>
+            <button onclick="loadPage('./Fortschritte.html')">Fortschritte</button>
+            <button onclick="loadPage('./programme.html')">Programm</button>
+            <button onclick="loadPage('./kontakt.html')">Kontakt</button>
+        </nav>
+    </header>
+
+    <main id="content-area">
+        <section class="hero">
+            <h2>Optimiere dein Potenzial</h2>
+            <p>
+                Professionelle Programme für Fitness,
+                Style und Selbstverbesserung.
+            </p>
+            <img src="clav.jpg" alt="Transformation Bild">
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Ascend Aesthetics | <a href="javascript:void(0)" onclick="loadPage('./kontakt.html')"
+                class="footer-link">Kontakt</a> </p>
+    </footer>
+</body>
+
+</html>
