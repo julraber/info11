@@ -1,0 +1,100 @@
+body{
+	background: rgb(125, 158, 132);
+}
+#Titel{
+	background: rgb(230, 214, 188);
+	width: 80%;
+	height: 20vh;
+	margin: 0 10% 0 10%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center; 
+}
+#ue{
+	width: 76%;
+	text-align:center;
+}
+#Bild{
+	width: 12%;
+	height: 20vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+#logo{
+	width: 100%;
+	height: 100%;
+}
+#Navi{
+	background: rgb(112, 128, 100);
+	width: 100%;
+	height: 10vh;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.but{
+	width: 10%;
+	height: 90%;
+	background: rgb(230, 214, 188);
+	border:none;
+	border-radius: 5pt;
+	margin-right: 10px;
+	transition-duration: 0.4s;
+}
+.but:hover{
+	background: rgb(245, 241, 232);
+}
+.but2{
+	background: rgb(230, 214, 188);
+   	border:none;
+	border-radius: 5pt;
+	margin-right: 5px;
+	transition-duration: 0.4s;
+}
+.but2:hover{
+	background: rgb(245, 241, 232);
+}
+#mainbox{
+	background: rgb(245, 241, 232);
+	width: 76%;
+	margin: 0vh 10% 10% 10%;
+	padding: 2%;
+}
+#unten{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+#WilhelmSeite1{
+	width: 25%;
+	height: 35%;
+	margin: 10px;
+	float: right;
+}
+#WilhelmSeite2{
+	width: 35%;
+	height: 25%;
+	margin: 10px;
+	float: right;
+}
+table{
+	border: thin solid;
+	border-spacing: 20px 10px;
+	text-align: left;
+	margin: auto;
+	background: rgb(230, 214, 188);
+}
+caption{
+	border: thin solid;
+	background: rgb(125, 158, 132);
+}
+#WilhelmSeite3{
+	width: 20%;
+	height: 10%;
+	margin: 10px;
+	float: right;
+}

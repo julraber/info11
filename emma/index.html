@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" href="style1.css"> 
+    </head>
+    <body>
+            <div id="Titel">
+                <div id="Bild"> <img src="bild.jpg" id="logo"></div>
+                <div id="ue"><h1>Interaktive Website</h1></div>
+            </div>
+            <div id="Navi">
+                <button onclick="Seiteladen('./Seite1.html')" class="but" href="#">Wilhelm von Humboldt</button>
+                <button onclick="Seiteladen('./Seite2.html')" class="but" href="#">Gymnasium Nordhausen</button>
+                <button onclick="Seiteladen('./Seite3.html')" class="but" href="#">Caroline von Humboldt</button>
+            </div>
+            <div id="mainbox">
+                    <h2>Willkommen auf unserer Webseite rund um das Leben und Wirken von Wilhelm von Humboldt und Caroline von Humboldt.</h2>
 
+			<p>Diese Seite bietet dir einen Einblick in die bedeutenden Beiträge Wilhelm von Humboldts zur Bildung, Sprachwissenschaft und Gesellschaft. Seine Ideen prägen bis 			heute unser Verständnis von moderner Bildung und Persönlichkeitsentwicklung. Ebenso werfen wir einen Blick auf Caroline von Humboldt, die als kluge und 				einflussreiche Persönlichkeit ihrer Zeit das kulturelle Leben maßgeblich mitgestaltet hat.</p>
+
+			<p>Ein weiterer Schwerpunkt unserer Webseite ist das Wilhelm-von-Humboldt-Gymnasium Nordhausen. Hier erfährst du mehr über die Schule, ihre Geschichte, ihr Leitbild 			und ihren Bezug zu den Idealen Wilhelm von Humboldts.</p>
+
+			<p>Egal, ob du dich für Geschichte, Bildung oder das Leben außergewöhnlicher Persönlichkeiten interessierst – diese Seite lädt dich dazu ein, mehr zu entdecken und 			Zusammenhänge besser zu verstehen.</p>
+            </div>
+	    <div id="unten">
+	    <button onclick="Seiteladen('./Impressum.html')" class="but2" href="#">Impressum</button>
+            <button onclick="Seiteladen('./Kontakt.html')" class="but2" href="#">Kontakte</button>
+	    </div>
+            <script>
+                function Seiteladen(datei){
+                    fetch(datei)
+                    .then(antwort => antwort.text())
+                    .then(inhalt => {
+                        document.getElementById("mainbox").innerHTML = inhalt;
+                    })
+                    .catch(error =>
+                        {document.getElementById("mainbox").innerHTML = "<p>Fehler beim Laden der Seite</p>";
+                            console.error(error)
+                        })
+                }
+            </script>
+    </body>
+</html>
