@@ -42,7 +42,7 @@ main {
 	z-index: 0;	
 	
 	padding: 16px 24px;
-	background: linear-gradient(135deg, #facc15, #a3e635);
+	background: linear-gradient(135deg, #a3e635, #22c55e);
 	width: 50%;
 	min-height: 90vh;
 	margin: auto;	
