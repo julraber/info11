@@ -2,6 +2,7 @@ body {
 	background: #FDFAFB;
 	display: flex; 
 	flex-wrap: wrap;
+	margin: 0;
 	
 }
 
@@ -53,6 +54,7 @@ main {
 }
 
 footer {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	gap: 20px;
