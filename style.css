@@ -174,8 +174,13 @@ footer {
 	display: inline-block;
 	margin: auto 2pt;
 	
-	color: #2E543C;
-	font-size: 300%;
+	font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  	font-size: clamp(1.2rem, 2.5vw, 2rem);
+  	font-weight: 900;
+  	letter-spacing: 0.06em;
+  	text-transform: uppercase;
+
+  	color: #102014;
 	
 }
 
