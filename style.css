@@ -1,5 +1,6 @@
 body {
 	background: #FDFAFB;
+	display: flex; 
 	
 }
 
@@ -41,6 +42,13 @@ main {
 	margin: auto;	
 	text-align: center;
 	color: #0B440B;
+}
+
+.ha {
+	width: 20%;
+	margin: auto;
+	min-height: 80vh;
+	background:red;
 }
 
 footer {
