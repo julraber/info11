@@ -1,5 +1,5 @@
 body {
-	background: #FDFAFB;
+	background: linear-gradient(135deg, #a3e635, #facc15);
 	display: flex; 
 	flex-wrap: wrap;
 	margin: 0;
