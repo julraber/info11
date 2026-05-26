@@ -6,6 +6,10 @@ body {
 	
 }
 
+a {
+	text-decoration: none;
+}
+
 nav {
 	position: sticky;
 	top: 0px;
@@ -53,6 +57,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 }
 
 .js {
