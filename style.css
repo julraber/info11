@@ -1,6 +1,7 @@
 body {
 	background: #FDFAFB;
 	display: flex; 
+	flex-wrap: wrap;
 	
 }
 
