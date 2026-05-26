@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+ <html> 
+ <head> 
+  <meta charset="UTF-8">
+  <title> gesundes Backen </title> 
+  <link rel="stylesheet" href="style.css">
+ </head>
+  <body> 
+  <div id="titelbox"> <img src="Cookie.jpeg" class="Logo"> 
+  <h1 class="titeltext"> gesundes Backen </h1> 
+  </div> 
+   <nav class="button-box"> 
 
+    <button onclick="Open('Startseite.html')">Startseite</button> 
+    <button onclick="Open('seite1.html')"> Rezepte </button> 
+    <button onclick="Open('seite2.html')"> Informationen </button> 
+    <button onclick="Open('seite3.html')"> Kontakt </button> 
+    <button onclick="Open('seite4.html')"> Impressum </button> 
+   </nav>
+  <div id="Mainbox"> 
+    <div class="banner"> 
+		Willkommen auf meiner Website! 
+		<p> Hier findest gesunde Rezepte zum selber backen. </p> 
+		               Viel Spaß! 
+	 </div> 
+  </div> 
+    <footer class="footer">
+        © 2026 Gesundes Backen
+    </footer>
+  <script> 
+       function Open(seite) { 
+		  fetch(seite) 
+		 .then(antwort => antwort.text()) 
+		 .then(inhalt =>{ document.getElementById("Mainbox").innerHTML=inhalt; }) 
+		} 
+	</script>
+   </body> 
+  </html>

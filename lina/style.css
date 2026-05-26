@@ -1,0 +1,157 @@
+.banner{
+
+    background: #c62828;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+
+    font-size: 40px;
+
+    width: 100%;
+
+}
+
+
+
+#titelbox {
+    background: linear-gradient(to right, #8b1e1e, #b22222); 
+    height: 95px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.Logo {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.titeltext {
+    color: white;
+    font-size: 65px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+.button-box {
+    background-color: #d92c2c;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+
+
+#Mainbox {
+    min-height: 700px;
+    background-color: white;
+}
+
+.banner {
+    font-size: 24px;
+    padding: 20px;
+    color: black;
+}
+
+.footer {
+
+  background-color: #d92c2c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+
+}
+
+
+.rezepte {
+    background-color: #f4eded;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+
+.rezepte h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+
+
+.karte {
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    transition: 0.2s;
+}
+
+
+
+.karte img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+
+
+.karte button {
+    margin-top: 25px;
+    background-color: #d92c2c;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.box{
+
+    width: 70%;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border: 3px solid #c62828;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.background {
+
+  background-image: url("Collage.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
