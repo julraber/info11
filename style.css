@@ -42,12 +42,13 @@ main {
 	z-index: 0;	
 	
 	padding: 16px 24px;
-	background: #79AF81;
+	background: #a3e635;
 	width: 50%;
 	min-height: 90vh;
 	margin: auto;	
 	text-align: center;
 	color: #0B440B;
+	border-radius: 6px;
 }
 
 .ha {
